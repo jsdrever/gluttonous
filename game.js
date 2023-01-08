@@ -60,7 +60,9 @@ const MAX_QUESTIONS = 4;
     getNewQuestion = () => {
     if(availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
         localStorage.setItem("mostRecentScore", score);
-        return window.location.assign("/end.html");
+        return window.location.assign("./end.html");
+
+        //!the return here to display the homepage stuff
     }
     questionCounter++;
     questionCounterText.innerText = questionCounter + "/" + MAX_QUESTIONS;
@@ -126,7 +128,7 @@ function setTime() {
     if(secondsLeft === 0) {
         localStorage.setItem("mostRecentScore", score);
       // Stops execution of action at set interval
-      return window.location.assign("/end.html");
+      return window.location.assign("./end.html");
      
     //   sendMessage();
     }
