@@ -45,6 +45,7 @@ let questions = [
                 choice4: "The Triassic Period",
                 answer: 3,
             },
+            
         ];
 
 const CORRECT_BONUS = 100;
